@@ -92,7 +92,7 @@ const webpackConfig = {
         loader: 'babel-loader'
       },
       {
-        test: /\.(js)$/,
+        test: /\.js$/,
         loader: 'babel-loader',
         exclude: {
           test: path.resolve(__dirname, "node_modules"),
@@ -125,10 +125,7 @@ const webpackConfig = {
     //webapp开发基本不需要该功能，主要用于前后端同域部署的本地开发
     proxy: {
       "/api": "http://localhost:3000"
-    },
-    before: function (app) {
-      //开发时可以在这里动态替换、映射一些http请求，参考express配置
-    },
+    }
   },
   performance: {
     hints: false

@@ -21,7 +21,16 @@
 .App-intro {
   font-size: large;
 }
-
+.Error-boundary{
+  cursor: pointer;
+}
+.Context-case button {
+  margin-top: 40px;
+  font-size:80px;
+}
+.Hocdemo-case,.Portals-case{
+  margin-top: 20px
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
